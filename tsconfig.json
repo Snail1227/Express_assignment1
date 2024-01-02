@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
     "strict": true,
-    "lib": ["esnext"],
-    "esModuleInterop": true
-  }
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "lib": ["Esnext"],
+    "outDir": "./build"
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
 }
